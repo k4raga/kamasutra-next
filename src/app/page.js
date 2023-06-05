@@ -1,10 +1,13 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import s from "./page.module.css";
 
 export default function Home() {
 	return (
-		<main className={styles.main}>
-			<h1>Привет, мир!</h1>
+		<main className={s.main}>
+			<section className={s.header}>Шапка</section>
+			<section className={s.navbar}>Навигация</section>
+			<section className={s.content}>Контент</section>
+			<section className={s.footer}>Футер</section>
 		</main>
 	);
 }
